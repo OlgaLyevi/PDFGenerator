@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import HTMLToPDFConverter
+import PDFGenerator
 
 class ViewController: UIViewController {
     
-    let pdfConverter = HTMLToPDFConverter()
+    let pdfConverter = PDFGenerator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         """
 
         // Convert the HTML content to PDF
-        pdfConverter.convertHTMLToPDF(html: htmlContent) { [weak self] pdfData, error in
+        pdfConverter.PDFGenerator(html: htmlContent) { [weak self] pdfData, error in
             if let error = error {
                 print("Failed to generate PDF: \(error)")
             } else if let pdfData = pdfData {

@@ -1,8 +1,8 @@
 {
   "name": "PDFGenerator",
   "version": "0.1.0",
-  "summary": "A short description of PDFGenerator.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A Swift library to convert HTML to PDF.",
+  "description": "Converts HTML pages to PDF",
   "homepage": "https://github.com/OlgaLyevi/PDFGenerator",
   "license": {
     "type": "MIT",
@@ -16,7 +16,17 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "PDFGenerator/Classes/**/*"
+  "source_files": "PDFGenerator/Classes/**/*",
+  "swift_versions": "5.0",
+  "dependencies": {
+    "UIKit": [
+
+    ],
+    "WebKit": [
+
+    ]
+  },
+  "swift_version": "5.0"
 }
